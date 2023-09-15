@@ -7,8 +7,6 @@ const MovieCard = ({ items }) => {
 
   // const poster = `https://image.tmdb.org/t/p/w500/${poster_path}`;  low quality
 
-  // const image = poster_path || "ImagePlaceholder.png";
-
   const poster = poster_path
     ? `https://image.tmdb.org/t/p/w780/${poster_path}`
     : "/ImagePlaceholder.png";

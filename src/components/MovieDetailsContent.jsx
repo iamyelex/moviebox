@@ -45,12 +45,6 @@ const MoviesDetailContent = ({
       </button>
 
       <div className="px-2 lg:px-0 rounded-lg">
-        {/* {!youtubeKey && (
-          <p className="flex items-center justify-center text-red-500 h-[380px] w-[100%] bg-black rounded-lg">
-            No Tailer found !!!
-          </p>
-        )} */}
-
         {youtubeKey ? (
           <YouTube videoId={youtubeKey} opts={opts} />
         ) : (
