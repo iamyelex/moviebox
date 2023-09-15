@@ -11,7 +11,6 @@ import SearchResult from "./pages/SearchResult";
 import { movieDetailsLoader, topMovieLoader } from "./services/APIs";
 import { Toaster } from "react-hot-toast";
 import ErrorPage from "./ui/ErrorPage";
-import ScrollToTop from "./ui/ScrollToTop";
 
 function App() {
   <Toaster
@@ -45,7 +44,6 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route>
-        <ScrollToTop />
         <Route
           path="/"
           element={<Homepage />}

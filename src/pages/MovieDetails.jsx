@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 
 import MovieDetailsHeader from "../components/MovieDetailsHeader";
 import MovieDetailsContent from "../components/MovieDetailsContent";
+import ScrollToTop from "../ui/ScrollToTop";
 
 const MovieDetails = () => {
   const movieDetails = useLoaderData();
@@ -10,6 +11,7 @@ const MovieDetails = () => {
 
   return (
     <main className="flex gap-10 pb-12">
+      <ScrollToTop />
       <MovieDetailsHeader />
 
       <section className="mt-12 lg:mr-[50px]">
