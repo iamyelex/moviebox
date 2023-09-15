@@ -55,6 +55,7 @@ function App() {
           path="/movies/:id"
           element={<MovieDetails />}
           loader={movieDetailsLoader}
+          errorElement={<ErrorPage message="something went wrong" />}
         />
         <Route path="/search/:id" element={<SearchResult />} />
         <Route path="*" element={<ErrorPage message="404 page Not Found" />} />

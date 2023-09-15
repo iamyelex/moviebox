@@ -18,8 +18,12 @@ export const searchMovie = async (word) => {
     `https://api.themoviedb.org/3/search/movie?query=${word}&include_adult=false&language=en-US&page=1`,
     options
   );
+  console.log(res);
   const data = await res.json();
-  return data;
+
+  if (res.ok) {
+    return data;
+  }
 };
 
 // LOAD MOVIE DETAILS
@@ -31,6 +35,8 @@ export const movieDetailsLoader = async ({ params }) => {
   const data = await res.json();
   return data;
 };
+
+// loAD VIDEO TRAILER
 
 export const videoLoader = async (id) => {
   const res = await fetch(
