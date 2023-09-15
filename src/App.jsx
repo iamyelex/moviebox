@@ -1,8 +1,9 @@
 import {
   RouterProvider,
   Route,
-  createBrowserRouter,
+  // createBrowserRouter,
   createRoutesFromElements,
+  createHashRouter,
 } from "react-router-dom";
 
 import Homepage from "./pages/Homepage";
@@ -41,7 +42,7 @@ function App() {
     }}
   />;
 
-  const router = createBrowserRouter(
+  const router = createHashRouter(
     createRoutesFromElements(
       <Route>
         <Route
